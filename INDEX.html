@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Copa do Mundo 2026 • Contagem & Curiosidades</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f1a3a 0%, #1e3a5f 100%);
+      color: #f0f4ff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 30px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 16px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    h1 {
+      font-size: 3.4rem;
+      color: #ffca28;
+      text-shadow: 0 0 20px rgba(255,202,40,0.7);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    .countdown-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .countdown-box {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,202,40,0.3);
+      border-radius: 16px;
+      padding: 20px 28px;
+      min-width: 140px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s;
+    }
+
+    .countdown-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      border-color: #ffca28;
+    }
+
+    .number {
+      font-size: 3.8rem;
+      font-weight: bold;
+      color: #ffca28;
+      line-height: 1;
+    }
+
+    .label {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-top: 6px;
+    }
+
+    .stadiums {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffeb3b;
+      margin-bottom: 40px;
+      font-size: 2.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.35s;
+    }
+
+    .card:hover {
+      transform: scale(1.06);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 4px solid #ffca28;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #ffeb3b;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 30px;
+      opacity: 0.7;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.6rem; }
+      .number { font-size: 2.8rem; }
+      .countdown-box { min-width: 110px; padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Copa do Mundo FIFA 2026</h1>
+  <div class="subtitle">Estados Unidos • Canadá • México</div>
+</header>
+
+<div class="countdown-container">
+  <div class="countdown-box">
+    <div class="number" id="days">00</div>
+    <div class="label">Dias</div>
+  </div>
+  <div class="countdown-box">
+    <div class="number" id="hours">00</div>
+    <div class="label">Horas</div>
+  </div>
+  <div class="countdown-box">
+    <div class="number" id="minutes">00</div>
+    <div class="label">Minutos</div>
+  </div>
+  <div class="countdown-box">
+    <div class="number" id="seconds">00</div>
+    <div class="label">Segundos</div>
+  </div>
+</div>
+
+<section class="stadiums">
+  <h2>Alguns dos Estádios Sede</h2>
+  
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1543782249-3f02e0b2f38e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="MetLife Stadium">
+      <div class="card-content">
+        <h3>MetLife Stadium</h3>
+        <p>East Rutherford, NJ</p>
+        <p>Capacidade: ~82.500</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560272564-c83b19b38190?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mercedes-Benz Stadium">
+      <div class="card-content">
+        <h3>Mercedes-Benz Stadium</h3>
+        <p>Atlanta, GA</p>
+        <p>Capacidade: ~71.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1609135840178-38e5c2f298e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estadio Azteca">
+      <div class="card-content">
+        <h3>Estadio Azteca</h3>
+        <p>Cidade do México</p>
+        <p>Capacidade: ~87.500</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552667467-0771b01c0b3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="BC Place">
+      <div class="card-content">
+        <h3>BC Place</h3>
+        <p>Vancouver, Canadá</p>
+        <p>Capacidade: ~54.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Copa do Mundo FIFA 2026 – 11 de junho a 19 de julho<br>
+  Primeira Copa com 48 seleções • #48teams #WorldCup2026
+</footer>
+
+<script>
+  // Data oficial de início da Copa 2026 (11 de junho de 2026)
+  const WORLD_CUP_DATE = new Date("2026-06-11T00:00:00-04:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = WORLD_CUP_DATE - now;
+
+    if (distance < 0) {
+      document.getElementById("days").textContent    = "00";
+      document.getElementById("hours").textContent   = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      return;
+    }
+
+    const days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent    = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent   = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+  }
+
+  // Atualiza a cada segundo
+  setInterval(updateCountdown, 1000);
+  updateCountdown(); // Primeira execução imediata
+</script>
+
+</body>
+</html>
